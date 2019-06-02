@@ -1,0 +1,6 @@
+export const GET_BOOKS_REQUEST = 'GET_BOOKS_REQUEST';
+export const GET_BOOKS_FAILURE = 'GET_BOOKS_FAILURE';
+export const GET_BOOKS_SUCCESS = 'GET_BOOKS_SUCCESS';
+
+export const GET_FILTERS = 'GET_FILTERS';
+export const SET_FILTERS = 'SET_FILTERS';
