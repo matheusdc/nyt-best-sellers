@@ -2,7 +2,7 @@
 
 ## About this project
 
-This project is hosted on [Github Pages](https://matheusdc.github.io/ifood-frontend-test), and has an automated deploy using Travis.
+This project is hosted on [Github Pages](https://matheusdc.github.io/nyt-best-sellers/), and has an automated deploy using Travis.
 
 ## Development Environment
 
@@ -29,6 +29,7 @@ The initial boilerplate was created using `create-react-app`.
 Technologies used for this project:
 * React Components using Hooks API
 * UI Framework: [Ant Design](https://ant.design/)
+* Skeleton UI was used to decreased the perceived time for loading books
 * State Management: Redux/Redux-Saga
   * Redux Saga simplifies async call using redux.
 * Axios for API Calls
