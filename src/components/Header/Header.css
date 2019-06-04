@@ -1,0 +1,17 @@
+.header {
+  margin-top: 48px;
+  font-size: 3.5rem;
+}
+
+.header__title {
+  font-size: 3.7rem;
+  margin: 0;
+}
+
+.header__subtitle {
+  margin: 0 0 48px 0;
+  font-size: 1.2rem;
+  font-style: italic;
+
+  color: grey;  
+}

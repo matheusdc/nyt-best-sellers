@@ -7,9 +7,12 @@ import 'antd/lib/affix/style/css';
 import Button from 'antd/lib/button';
 import 'antd/lib/button/style/css';
 
+import './FilterButton.css';
+
 const FiltersButton = ({ onClick }) => (
   <Affix offsetBottom={20} style={{ float: 'right' }}>
     <Button
+      className="filters-button"
       type="primary"
       shape="circle"
       icon="filter"

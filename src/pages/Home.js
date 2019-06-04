@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
-
-import Tipography from 'antd/lib/typography';
-import 'antd/lib/typography/style/css';
+import React, { useState, Fragment } from 'react';
 
 import Col from 'antd/lib/col';
 import 'antd/lib/col/style/css';
@@ -12,22 +9,31 @@ import 'antd/lib/row/style/css';
 import Books from '../components/Books';
 import Filters from '../components/Filters';
 import FiltersButton from '../components/Filters/FiltersButton';
+import NYTLogo from '../components/NYTLogo';
+import Header from '../components/Header';
 
-const { Title } = Tipography;
+import BookDetailModal from '../components/Books/BookDetailModal';
 
 const Home = () => {
   const [visible, setVisible] = useState(false);
   const toggleDrawer = () => setVisible(!visible);
 
   return (
-    <Row type="flex" justify="center">
-      <Col xs={22} xl={18}>
-        <Title style={{ marginTop: 48, fontSize: '3.7rem' }}>Books</Title>
-        <Books />
-        <FiltersButton onClick={toggleDrawer} />
-        <Filters visible={visible} toggleDrawer={toggleDrawer} />
-      </Col>
-    </Row>
+    <Fragment>
+      <Row type="flex" justify="center" style={{ marginBottom: 20 }}>
+        <Col xs={22} xl={18}>
+          <Header />
+          <Books />
+          <FiltersButton onClick={toggleDrawer} />
+          <Filters visible={visible} toggleDrawer={toggleDrawer} />
+          <BookDetailModal />
+        </Col>
+        <Col xs={22} xl={18} style={{ textAlign: 'center' }}>
+          <NYTLogo />
+        </Col>
+      </Row>
+
+    </Fragment>
   );
 };
 

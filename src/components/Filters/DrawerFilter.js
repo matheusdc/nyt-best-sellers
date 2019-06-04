@@ -20,7 +20,7 @@ import 'antd/lib/row/style/css';
 import Col from 'antd/lib/col';
 import 'antd/lib/col/style/css';
 
-import { setFilters } from '../../actions';
+import { setFilters, setBooksCategory } from '../../actions';
 import { getListNames } from '../../services/NytBooksApi';
 
 const { Option } = Select;
@@ -44,6 +44,12 @@ const DrawerFilter = ({ visible, toggleDrawer }) => {
     updateListNames();
   }, []);
 
+  const onCategoryChange = (value, target) => {
+    const category = target.props.children;
+    setFilters({ list: value });
+    setBooksCategory({ category });
+  };
+
   return (
     <div>
       <Drawer
@@ -56,7 +62,7 @@ const DrawerFilter = ({ visible, toggleDrawer }) => {
             <Col span={24}>
               <Form.Item label="Category">
                 <Select
-                  onChange={value => setFilters({ list: value })}
+                  onChange={onCategoryChange}
                   placeholder="Please select a category"
                   loading={loadingLists}
                 >
