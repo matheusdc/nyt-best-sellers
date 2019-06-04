@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/nyt-best-sellers/static/css/main.18e27db4.chunk.css",
+    "main.js": "/nyt-best-sellers/static/js/main.25f79116.chunk.js",
+    "main.js.map": "/nyt-best-sellers/static/js/main.25f79116.chunk.js.map",
+    "runtime~main.js": "/nyt-best-sellers/static/js/runtime~main.b7b4ff2b.js",
+    "runtime~main.js.map": "/nyt-best-sellers/static/js/runtime~main.b7b4ff2b.js.map",
+    "static/css/2.17ef8162.chunk.css": "/nyt-best-sellers/static/css/2.17ef8162.chunk.css",
+    "static/js/2.cd9299f0.chunk.js": "/nyt-best-sellers/static/js/2.cd9299f0.chunk.js",
+    "static/js/2.cd9299f0.chunk.js.map": "/nyt-best-sellers/static/js/2.cd9299f0.chunk.js.map",
+    "index.html": "/nyt-best-sellers/index.html",
+    "precache-manifest.bf598ea9d4dcae81f7a47cab51fd8e2a.js": "/nyt-best-sellers/precache-manifest.bf598ea9d4dcae81f7a47cab51fd8e2a.js",
+    "service-worker.js": "/nyt-best-sellers/service-worker.js",
+    "static/css/2.17ef8162.chunk.css.map": "/nyt-best-sellers/static/css/2.17ef8162.chunk.css.map",
+    "static/css/main.18e27db4.chunk.css.map": "/nyt-best-sellers/static/css/main.18e27db4.chunk.css.map"
+  }
+}
